@@ -18,9 +18,10 @@ class Bot:
         self.bot.send_document(self.user_id, file)
 
     def send_results(self, text, image, file):
-        self.bot.send_message(self.user_id, text)
-        self.bot.send_photo(self.user_id, image)
-        self.bot.send_document(self.user_id, file)
+        with open('stats.png', 'rb') as f:
+            self.bot.send_photo(self.user_id, f, text)
+        with open(file, 'rb') as f:
+            self.bot.send_document(self.user_id, f)
 
 
 
