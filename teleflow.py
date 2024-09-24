@@ -16,5 +16,14 @@ class Bot():
     def send_file(self, file):
         self.bot.send_document(self.user_id, file)
 
+    def send_results(self, text, image, file):
+        self.bot.send_message(self.user_id, text)
+        self.bot.send_photo(self.user_id, image)
+        self.bot.send_document(self.user_id, file)
+
+
+
+
+
 
     
