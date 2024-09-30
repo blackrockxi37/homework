@@ -1,7 +1,7 @@
 import os
 import telebot
-import plotly.io as pio
-import plotly.graph_objects as go
+import plotly.io as pio # type: ignore
+import plotly.graph_objects as go # type: ignore
 from IPython.display import display
 from dotenv import load_dotenv
 class Bot:
