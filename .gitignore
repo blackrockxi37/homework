@@ -5,3 +5,4 @@ data
 data.txt
 IMDB Dataset.csv
 epoch=2-step=7500.ckpt
+epoch=4-step=12500.ckpt
